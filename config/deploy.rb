@@ -1,7 +1,7 @@
 require "bundler/capistrano"
 
 set :application, "mochi"
-set :repository,  "https://github.com:rubenjohne/mochi.git"
+set :repository,  "https://github.com/rubenjohne/mochi.git"
 set :deploy_to, "/u/apps/#{application}"
 set :scm, :git
 
