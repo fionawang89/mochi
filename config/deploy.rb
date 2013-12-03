@@ -1,5 +1,4 @@
 require "bundler/capistrano"
-require 'fast_git_deploy/enable'
 
 set :application, "mochi"
 set :repository,  "https://github.com:rubenjohne/mochi.git"
@@ -15,9 +14,9 @@ default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
 ssh_options[:keys] = [File.join(ENV["HOME"], ".vagrant.d", "insecure_private_key")]
 
-role :app, "mochi.test"
-role :web, "mochi.test"
-role :db,  "mochi.test", :primary => true
+role :app, "mochi.dev"
+role :web, "mochi.dev"
+role :db,  "mochi.dev", :primary => true
 
 after "deploy:setup" do
   deploy.fast_git_setup.clone_repository
