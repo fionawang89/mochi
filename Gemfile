@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 1.2'
 
 # capistrano for delployment
 gem 'capistrano', '2.12.0'
+gem 'fast_git_deploy'
 
 
 group :doc do

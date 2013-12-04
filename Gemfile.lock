@@ -43,6 +43,7 @@ GEM
     coffee-script-source (1.6.3)
     erubis (2.7.0)
     execjs (2.0.2)
+    fast_git_deploy (0.2.2)
     highline (1.6.20)
     hike (1.2.3)
     i18n (0.6.9)
@@ -124,6 +125,7 @@ PLATFORMS
 DEPENDENCIES
   capistrano (= 2.12.0)
   coffee-rails (~> 4.0.0)
+  fast_git_deploy
   jbuilder (~> 1.2)
   jquery-rails
   rails (= 4.0.1)
