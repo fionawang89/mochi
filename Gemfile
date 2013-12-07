@@ -29,6 +29,7 @@ gem 'capistrano', '2.12.0'
 
 gem 'fast_git_deploy'
 
+gem 'therubyracer'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
