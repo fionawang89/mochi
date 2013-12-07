@@ -1,5 +1,5 @@
 require "bundler/capistrano"
-require "fast_git_deploy"
+require 'fast_git_deploy'
 
 set :application, "mochi"
 set :repository,  "https://github.com/rubenjohne/mochi.git"
